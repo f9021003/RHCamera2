@@ -4,11 +4,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
-    <com.renhui.rhcamera2.AutoFitTextureView
-        android:id="@+id/textureView"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.renhui.rhcamera2.AutoFitTextureView
+            android:id="@+id/textureView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <com.renhui.rhcamera2.AutoFitTextureView
+            android:id="@+id/textureView2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
 
     <Button
         android:id="@+id/takePicture"
